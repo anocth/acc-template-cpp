@@ -33,12 +33,12 @@ using pci = pair<char, int>;
 #define SEC second
 
 /* loop */
-#define REPS(i, a, b) for(ll i=(a), i##_len=(b); i<=i##_len; ++i)
-#define REP(i, n) REPS(i, 0, (n)-1)
-#define REP1(i, n) REPS(i, 1, (n))
-#define DEPS(i, a, b) for(ll i=(a), i##_len=(b); i>=i##_len; --i)
-#define DEP(i, n) DEPS(i, (n)-1, 0)
-#define DEP1(i, n) DEPS(i, (n), 1)
+#define REPS(i, a, b) for(ll i=(a), i##_len=(b); i<i##_len; ++i)
+#define REP(i, n) REPS(i, 0, (n))
+#define REP1(i, n) REPS(i, 1, (n)+1)
+#define DEPS(i, a, b) for(ll i=(a), i##_len=(b); i>i##_len; --i)
+#define DEP(i, n) DEPS(i, (n)-1, -1)
+#define DEP1(i, n) DEPS(i, (n), 0)
 #define EACH(i, n) for(auto&& i : (n))
 
 /* macro func */
