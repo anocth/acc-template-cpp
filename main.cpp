@@ -44,8 +44,6 @@ using pci = pair<char, int>;
 /* macro func */
 #define ALL(a) (a).begin(),(a).end()
 #define LLA(a) (a).rbegin(),(a).rend()
-#define MIN(a,b) ((a)>(b)?(b):(a))
-#define MAX(a,b) ((a)>(b)?(a):(b))
 #define SZ(x) ((ll)(x).size())
 #define UNIQUE(v) (v).erase(unique(ALL(v)),(v).end())
 
