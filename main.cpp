@@ -1,9 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/* Boost C++ Library
+/* Boost Format
 #include <boost/format.hpp>
 using boost::format;
+//*/
+/* Boost Multiprecision
+#include <boost/multiprecision/cpp_int.hpp>
+using boost::multiprecision::cpp_int;
 //*/
 
 // cin cout の結びつけ解除, stdioと同期しない(入出力非同期化)
