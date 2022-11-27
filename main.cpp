@@ -35,8 +35,8 @@ using pci = pair<char, int>;
 /* short hand */
 #define PB push_back
 #define MP make_pair
-#define FST first
-#define SEC second
+#define FS first
+#define SE second
 
 /* loop */
 #define REPS(i, a, b) for(ll i=(a), i##_len=(b); i<i##_len; ++i)
@@ -56,7 +56,7 @@ using pci = pair<char, int>;
 /* func */
 template <typename T> inline void print(const vector<T>& v, string s = " ")
     { const ll sz = v.size(); REP(i, sz) cout << v[i] << (i != sz - 1 ? s : "\n"); }
-template <typename T, typename S> inline void print(const pair<T, S>& p) { cout << p.FST << ' ' << p.SEC << endl; }
+template <typename T, typename S> inline void print(const pair<T, S>& p) { cout << p.FS << ' ' << p.SE << endl; }
 template <typename T> inline void print(const T& x) { cout << x << '\n'; }
 template <typename T, typename S> inline void print(const vector<pair<T, S>>& v) { EACH(p, v) print(p); }
 template <typename T, typename S> inline void print(const map<T, S>& m) { EACH(p, m) print(p); }
