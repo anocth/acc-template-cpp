@@ -34,6 +34,7 @@ using pci = pair<char, int>;
 
 /* short hand */
 #define PB push_back
+#define EB emplace_back
 #define MP make_pair
 #define FS first
 #define SE second
